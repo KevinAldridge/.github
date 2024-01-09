@@ -1,0 +1,13 @@
+{
+  "name": "gha demo workflow one",
+  "description": "boring ol gha properly named",
+  "iconName": "liverpool",
+  "categories": [
+    "kevins categories"
+  ],
+  "filePatterns": [
+    "package.json$",
+    "^Dockerfile",
+    ".*\\.md$"
+  ]
+}
