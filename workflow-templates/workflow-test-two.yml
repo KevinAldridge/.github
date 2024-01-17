@@ -32,14 +32,5 @@ jobs:
           java-version: 21.0.1
           distribution: 'zulu'
 
-      - name: turning the key
+      - name: turnning the key
         run: chmod -R +x ./.github
-
-      - name: rev the engine
-        id: package
-        working-directory: ${{ env.applicationfolder }}
-        run: $GITHUB_WORKSPACE/.github/scripts/build.sh
-
-      - name: off you go
-        working-directory: ${{ env.applicationfolder }}/target
-        run: aws s3 cp *.war s3://${{ env.S3BUCKET }}/
